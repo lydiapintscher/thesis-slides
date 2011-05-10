@@ -1,0 +1,10 @@
+*.kilepr
+*.backup
+*.aux
+*.log
+*.nav
+*.pdf
+*.out
+*.toc
+*.snm
+*~
