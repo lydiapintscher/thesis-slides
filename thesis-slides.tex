@@ -4,6 +4,7 @@
 
 \usepackage[german]{babel}
 \usepackage[utf8x]{inputenc}
+\usepackage{tikz}
 
 \title[Collaborative \& transparent FS development]{Collaborative and transparent Free Software development} 
 \author{Lydia Pintscher} 
@@ -44,13 +45,41 @@ foo
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaboration und Transparenz}
-foo
+\frametitle{Freie Software (1)}
+\begin{itemize}
+ \item beschreibt eine Philosophy zum Entwickeln und Verbreiten von Software
+ \item 4 Freiheiten (FSF):
+    \begin{enumerate}
+      \item Die Freiheit, das Programm für jeden Zweck zu benutzen.
+      \item Die Freiheit, zu verstehen, wie das Programm funktioniert und wie man es für seine Ansprüche anpassen kann.
+      \item Die Freiheit, Kopien weiterzuverbreiten, so dass man seinem Nächsten weiterhelfen kann.
+      \item Die Freiheit, das Programm zu verbessern und die Verbesserungen der Öffentlichkeit zur Verfügung zu stellen, damit die ganze Gemeinschaft davon profitieren kann.
+    \end{enumerate}
+ \item bekannnte Beispiele: Apache, Firefox, MediaWiki
+\end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Freie Software}
-foo
+\frametitle{Freie Software (2)}
+\begin{itemize}
+ \item verschiedene Projektformen m\"oglich (volunteer $\leftrightarrow$ company)
+ \item verschiedene Gr\"unde teilzuhaben (extrinsisch $\leftrightarrow$ intrinsisch)
+ \item unterschiedlich gro\ss e gef\"uhlte Distanz zwischen Mitgliedern
+ \item unterschiedliche Arbeits- und Kommunikationsstile
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		\draw (0cm, 0cm) -- (10cm, 0cm);
+		\foreach \x in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10} \draw (\x cm, 3pt) -- (\x cm, - 3pt);
+		\draw (0cm, 0cm) node[below=5pt] {volunteer};
+		\fill (0.625cm, 0cm) circle (2pt);\draw (0.625cm, 0cm) node[above=5pt] {Amarok};
+		\draw (5cm, 0cm) node[below=5pt] {gemischt};
+		\fill (8.75cm, 0cm) circle (2pt);\draw (8.75cm, 0cm) node[above=5pt] {Halo};
+		\draw (10cm, 0cm) node[below=5pt] {bezahlt};
+	\end{tikzpicture}	\caption{Spektrum der bestimmenden Kr\"afte in einem Freien Software Projekt}
+	\label{spectrumofprojectdriver}
+\end{figure}
 \end{frame}
 
 \begin{frame}
