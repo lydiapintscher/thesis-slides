@@ -5,6 +5,7 @@
 \usepackage[german]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{tikz}
+\usetikzlibrary{mindmap,trees}
 
 \title[Collaborative \& transparent FS development]{Collaborative and transparent Free Software development} 
 \author{Lydia Pintscher} 
@@ -132,7 +133,62 @@ Karlsruhe Institute of Technology
 
 \begin{frame}
 \frametitle{Halo}
-foo
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.5,keepaspectratio=true]{./ReleaseProcessHalo.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Halo}
+\begin{center}
+\begin{tikzpicture}
+  \path[small mindmap, concept color=green, text=black]
+    node[concept] {Halo activities}
+    [clockwise from=0]
+    child[concept color=green!80, grow=0] {
+      node[concept] {feature design}
+    }  
+    child[concept color=green!80, grow=60] {
+      node[concept] {writing code}
+    }
+    child[concept color=green!80, grow=120] {
+      node[concept] {quality assurance}
+    }  
+    child[concept color=green!80, grow=180] {
+      node[concept] {user engagement and support}
+    }
+    child[concept color=green!80, grow=240] {
+      node[concept] {contributor engagement}
+    }  
+    child[concept color=green!80, grow=300] {
+      node[concept] {promotion}
+    };
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Halo}
+\begin{center}
+\begin{tikzpicture}
+  \path[small mindmap, concept color=green, text=black]
+    node[concept] {Halo problems}
+    [clockwise from=0]
+    child[concept color=green!80, grow=0] {
+      node[concept] {com\-mu\-ni\-ca\-tion of vision/goal}
+    }  
+    child[concept color=green!80, grow=90] {
+      node[concept] {co\-or\-di\-na\-tion of QA}
+    }
+    child[concept color=green!80, grow=180] {
+      node[concept] {trans\-par\-en\-cy and co\-or\-di\-na\-tion}
+    }  
+    child[concept color=green!80, grow=270] {
+      node[concept] {user input}
+    };
+\end{tikzpicture}
+\end{center}
 \end{frame}
 
 \subsection{Amarok}
