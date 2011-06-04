@@ -5,6 +5,7 @@
 \usepackage[german]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{tabularx}
+\usepackage{slashbox}
 \usepackage{tikz}
 \usetikzlibrary{mindmap,trees}
 
@@ -348,7 +349,61 @@ foo
 
 \begin{frame}
 \frametitle{Kollaborativ eine Roadmap erstellen}
-foo
+\begin{columns}
+ \column{.4\textwidth}
+  \begin{itemize}
+   \item Lebenszyklus eines Feature requests
+   \item Umfang und Schwierigkeit von Feature requests
+   \item Erwartungen um einen Feature request kommunizieren
+   \item Claiming und Zuweisen von Feature requests
+   \item Feature request Seite und \"Ubersicht
+  \end{itemize}
+ \column{.6\textwidth}
+  \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4,keepaspectratio=true]{./featurerequeststates.png}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kollaborativ eine Roadmap erstellen}
+\begin{table}[h]
+\begin{tabular}{|p{0.1\textwidth}|p{0.8\textwidth}|}
+\hline
+Priority & Meaning\\
+\hline \hline
+P1 & will be implemented by the core team\\
+\hline
+P2 & will potentially be implemented by the core team\\
+\hline
+P3 & will not be implemented by the core team but patches will be happily accepted\\
+\hline
+P4 & undecided or disputed\\
+\hline
+P5 & will not be implemented and patches will likely not be accepted into the main repository\\
+\hline
+\end{tabular}
+\centering
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kollaborativ eine Roadmap erstellen}
+\begin{table}[h]
+\begin{tabular}{|l||*{4}{c|}}
+\hline
+\backslashbox{Scope}{Difficulty}&\makebox[3em]{easy}&\makebox[3em]{medium}&\makebox[3em]{hard}\\
+\hline \hline
+small & 1 & 3 & 6\\
+\hline
+medium & 2 & 5 & 8\\
+\hline
+large & 4 & 7 & 9\\
+\hline
+\end{tabular}
+\centering
+\end{table}
 \end{frame}
 
 \begin{frame}
