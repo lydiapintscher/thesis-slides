@@ -28,6 +28,14 @@ Karlsruhe Institute of Technology
 \tableofcontents
 \end{frame}
 
+\AtBeginSection[]
+{
+\begin{frame}
+\frametitle{\"Ubersicht}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
 \section{Einleitung}
 
 \begin{frame}
@@ -117,7 +125,7 @@ Karlsruhe Institute of Technology
 \section{Analyse des aktuellen Entwicklungsprozesses}
 
 \begin{frame}
-\frametitle{Analyse des aktuellen Entwicklungsprozesses}
+\frametitle{Vorgehensweise}
 \begin{itemize}
  \item strukturierte, vertrauliche Interviews um herauszufinden wer die Beteiligten sind, welche Tools benutzt werden und welche Probleme bew\"altigt werden m\"ussen
  \item Auswahl der Teilnehmer basierend auf ihrer Zeit im Projekt und ihrem T\"atigkeitsbereich
@@ -129,16 +137,15 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
+\frametitle{Communitymodell}
 \begin{figure}[h!]
  \centering
  \includegraphics[scale=0.35,keepaspectratio=true]{./ontology.png}
 \end{figure}
 \end{frame}
 
-\subsection{Halo}
-
 \begin{frame}
-\frametitle{Halo}
+\frametitle{Halo - Releaseprozess}
 \begin{figure}[h!]
  \centering
  \includegraphics[scale=0.5,keepaspectratio=true]{./ReleaseProcessHalo.png}
@@ -146,7 +153,7 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Halo}
+\frametitle{Halo - Aktivit\"aten}
 \begin{center}
 \begin{tikzpicture}
   \path[small mindmap, concept color=green, text=black]
@@ -175,7 +182,7 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Halo}
+\frametitle{Halo - Probleme}
 \begin{center}
 \begin{tikzpicture}
   \path[small mindmap, concept color=green, text=black]
@@ -197,10 +204,8 @@ Karlsruhe Institute of Technology
 \end{center}
 \end{frame}
 
-\subsection{Amarok}
-
 \begin{frame}
-\frametitle{Amarok}
+\frametitle{Amarok - Releaseprozess}
 \begin{figure}[h!]
  \centering
  \includegraphics[scale=0.43,keepaspectratio=true]{./ReleaseProcessAmarok.png}
@@ -208,7 +213,7 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Amarok}
+\frametitle{Amarok - Aktivit\"aten}
 \begin{center}
 \begin{tikzpicture}
   \path[small mindmap, concept color=blue, text=white]
@@ -237,7 +242,7 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Amarok}
+\frametitle{Amarok - Probleme}
 \begin{center}
 \begin{tikzpicture}
   \path[small mindmap, concept color=blue, text=white]
@@ -259,10 +264,8 @@ Karlsruhe Institute of Technology
 \end{center}
 \end{frame}
 
-\subsection{Vergleich und Schlussfolgerung}
-
 \begin{frame}
-\frametitle{Vergleich und Schlussfolgerung}
+\frametitle{Vergleich und Schlussfolgerung (1)}
 \begin{tabularx}{\textwidth}{|X|X|X|}
 \hline
  & Halo & Amarok \\
@@ -293,7 +296,7 @@ Standort Kernteam & Deutschland & weltweit \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Vergleich und Schlussfolgerung}
+\frametitle{Vergleich und Schlussfolgerung (2)}
 \begin{tabularx}{\textwidth}{|X|X|X|}
 \hline
  & Halo & Amarok\\
@@ -312,11 +315,6 @@ test case management & TestLink & Seite im wiki\\
 \end{frame}
 
 \section{Design eines verbesserten Entwicklungsprozesses}
-
-\begin{frame}
-\frametitle{Design eines verbesserten Entwicklungsprozesses}
-foo
-\end{frame}
 
 \begin{frame}
 \frametitle{Anforderungen, Erwartungen und Rahmenbedingungen}
@@ -352,7 +350,7 @@ foo
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaborativ eine Roadmap erstellen}
+\frametitle{Kollaborativ eine Roadmap erstellen (1)}
 \begin{columns}
  \column{.4\textwidth}
   \begin{itemize}
@@ -371,7 +369,7 @@ foo
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaborativ eine Roadmap erstellen}
+\frametitle{Kollaborativ eine Roadmap erstellen (2)}
 \begin{table}[h]
 \begin{tabular}{|p{0.1\textwidth}|p{0.8\textwidth}|}
 \hline
@@ -393,7 +391,7 @@ P5 & will not be implemented and patches will likely not be accepted into the ma
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaborativ eine Roadmap erstellen}
+\frametitle{Kollaborativ eine Roadmap erstellen (3)}
 \begin{table}[h]
 \begin{tabular}{|l||*{4}{c|}}
 \hline
@@ -432,11 +430,6 @@ large & 4 & 7 & 9\\
 \end{frame}
 
 \section{Implementierung eines verbesserten Entwicklungsprozesses}
-
-\begin{frame}
-\frametitle{Implementierung eines verbesserten Entwicklungsprozesses}
-foo
-\end{frame}
 
 \begin{frame}
 \frametitle{Einf\"uhrungsszenario}
@@ -480,12 +473,7 @@ foo
 \section{Evaluation}
 
 \begin{frame}
-\frametitle{Evaluation}
-foo
-\end{frame}
-
-\begin{frame}
-\frametitle{Umfrage}
+\frametitle{Umfrage (1)}
 \begin{columns}
  \column{.5\textwidth}
    ``Will the team dashboard increase transparency?''
@@ -503,7 +491,7 @@ foo
 \end{frame}
 
 \begin{frame}
-\frametitle{Umfrage}
+\frametitle{Umfrage (2)}
 \begin{columns}
  \column{.5\textwidth}
    ``Do you think the process of creating the new vision was transparent/collaborative?''
@@ -521,7 +509,7 @@ foo
 \end{frame}
 
 \begin{frame}
-\frametitle{Umfrage}
+\frametitle{Umfrage (3)}
 \begin{columns}
  \column{.5\textwidth}
   ``Will the new feature tracking form/template improve collaboration between contributors/contributors and users?''
