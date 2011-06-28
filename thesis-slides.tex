@@ -84,7 +84,7 @@ Karlsruhe Institute of Technology
 \begin{frame}
 \frametitle{Vorgehensweise}
 \begin{itemize}
- \item strukturierte, vertrauliche Interviews
+ \item 20 strukturierte, vertrauliche Interviews
      \begin{itemize}
         \item Wer sind die Beteiligten?
         \item Welche Tools werden benutzt?
@@ -160,7 +160,7 @@ Karlsruhe Institute of Technology
 \end{center}
 \end{frame}
 
-\section{Design}
+\section{Design und Implementierung}
 
 \begin{frame}
 \frametitle{Anforderungen, Erwartungen und Rahmenbedingungen}
@@ -175,62 +175,14 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaborativ in einem Team arbeiten}
-\begin{itemize}
- \item Team- und Aufgabenbewusstsein
- \item Zeitplan f\"ur Releases
- \item Checklisten
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Kollaborativ an einer Vision arbeiten}
-\begin{itemize}
- \item Erstellen und Kommunizieren einer Vision (adaptierter Prozess von Levin)
- \item Kollaborativ eine Vision aktualisieren
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Kollaborativ eine Roadmap erstellen}
-\begin{columns}
- \column{.4\textwidth}
-  \begin{itemize}
-   \item Umfang und Schwierigkeit von feature requests
-   \item Erwartungen um einen feature request kommunizieren
-   \item Annehmen und Zuweisen von feature requests
-   \item Seite f\"ur feature request und \"Ubersicht
-  \end{itemize}
- \column{.6\textwidth}
-  \begin{figure}[h!]
-   \centering
-   \includegraphics[scale=0.4,keepaspectratio=true]{./featurerequeststates.png}
-  \end{figure}
-\end{columns}
-\end{frame}
-
-\begin{frame}
-\frametitle{Qualit\"atssicherung}
-\begin{itemize}
- \item Testen durch eine gr\"o\ss ere Gruppe f\"ordern
- \item Problembereiche sichtbarer machen
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Bausteine}
-\begin{figure}[h]
- \centering
- \includegraphics[scale=0.5,keepaspectratio=true]{./buildingblocks.png}
-\end{figure}
-\end{frame}
-
-\section{Implementierung}
-
-\begin{frame}
 \frametitle{Kommunikation und Kollaboration in einem verteilten Team}
 \begin{columns}
  \column{.5\textwidth}
+Ziel:
+\begin{itemize}
+ \item Team- und Aufgabenbewusstsein
+\end{itemize}
+Umsetzung:
    \begin{itemize}
      \item team dashboard
      \item release dashboard
@@ -247,7 +199,20 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaborativ an einer Vision arbeiten}
+\frametitle{Kollaborativ an einer Vision arbeiten (1)}
+Ziele:
+\begin{itemize}
+ \item Erstellen und Kommunizieren einer Vision
+ \item Aktualisieren einer Vision 
+\end{itemize}
+Umsetzung:
+\begin{itemize}
+ \item adaptierter Prozess von Levin
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kollaborativ an einer Vision arbeiten (2)}
 \begin{itemize}
  \item etwa 70 Revisionen im Wiki
  \item 8 aktive Teilnehmer im IRC Meeting
@@ -259,6 +224,26 @@ Karlsruhe Institute of Technology
 
 \begin{frame}
 \frametitle{Kollaborativ eine Roadmap erstellen (1)}
+\begin{columns}
+ \column{.4\textwidth}
+  Ziele:
+  \begin{itemize}
+   \item Umfang und Schwierigkeit von feature requests kommunizieren
+   \item Erwartungen um einen feature request kommunizieren
+   \item Annehmen und Zuweisen von feature requests
+   \item Seite f\"ur feature request und \"Ubersicht
+  \end{itemize}
+ \column{.6\textwidth}
+  \begin{figure}[h!]
+   \centering
+   \includegraphics[scale=0.4,keepaspectratio=true]{./featurerequeststates.png}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Kollaborativ eine Roadmap erstellen (2)}
+Umsetzung:
 \begin{itemize}
  \item 2 Feature Tracking-Systeme
  \begin{itemize}
@@ -272,7 +257,7 @@ Karlsruhe Institute of Technology
 \end{frame}
 
 \begin{frame}
-\frametitle{Kollaborativ eine Roadmap erstellen (2)}
+\frametitle{Kollaborativ eine Roadmap erstellen (3)}
 \begin{figure}
  \includegraphics[scale=0.45,keepaspectratio=true]{./FeatureProposalTemplateAmarok.png}
 \end{figure}
@@ -280,11 +265,25 @@ Karlsruhe Institute of Technology
 
 \begin{frame}
 \frametitle{Qualit\"atssicherung}
+Ziele:
+\begin{itemize}
+ \item Testen durch eine gr\"o\ss ere Gruppe f\"ordern
+ \item Problembereiche sichtbarer machen
+\end{itemize}
+Umsetzung:
 \begin{itemize}
  \item Testcheckliste
  \item Public Testing Contest
  \item Emails von Bugzilla
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bausteine}
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.5,keepaspectratio=true]{./buildingblocks.png}
+\end{figure}
 \end{frame}
 
 \section{Evaluation}
@@ -368,7 +367,7 @@ Karlsruhe Institute of Technology
 \begin{frame}
 \frametitle{Ausblick}
 \begin{itemize}
- \item Tests mit anderen Projekten durchgeführen
+ \item Tests mit anderen Projekten durchführen
  \item Activity Indicator implementieren
 \end{itemize}
 \end{frame}
