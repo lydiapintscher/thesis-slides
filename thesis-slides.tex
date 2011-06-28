@@ -62,15 +62,16 @@ Karlsruhe Institute of Technology
 \frametitle{Freie Software (1)}
 \begin{itemize}
  \item beschreibt eine Philosophy zum Entwickeln und Verbreiten von Software
- \item bekannnte Beispiele: Apache, Firefox, MediaWiki
+ \item bekannnte Beispiele: Apache http Server, Firefox, MediaWiki
 \end{itemize}
 
-\begin{block}{4 Freiheiten (FSF)}
+\begin{block}{4 Freiheiten (Free Software Foundation)}
+    Die Freiheit, \dots
     \begin{enumerate}
-      \item Die Freiheit, das Programm für jeden Zweck zu benutzen.
-      \item Die Freiheit, zu verstehen, wie das Programm funktioniert und wie man es für seine Ansprüche anpassen kann.
-      \item Die Freiheit, Kopien weiterzuverbreiten, so dass man seinem Nächsten weiterhelfen kann.
-      \item Die Freiheit, das Programm zu verbessern und die Verbesserungen der Öffentlichkeit zur Verfügung zu stellen, damit die ganze Gemeinschaft davon profitieren kann.
+      \item das Programm für jeden Zweck zu benutzen.
+      \item zu verstehen, wie das Programm funktioniert und wie man es für seine Ansprüche anpassen kann.
+      \item Kopien weiterzuverbreiten, so dass man seinem Nächsten weiterhelfen kann.
+      \item das Programm zu verbessern und die Verbesserungen der Öffentlichkeit zur Verfügung zu stellen, damit die ganze Gemeinschaft davon profitieren kann.
     \end{enumerate}
 \end{block}
 \end{frame}
@@ -127,7 +128,12 @@ Karlsruhe Institute of Technology
 \begin{frame}
 \frametitle{Vorgehensweise}
 \begin{itemize}
- \item strukturierte, vertrauliche Interviews um herauszufinden wer die Beteiligten sind, welche Tools benutzt werden und welche Probleme bew\"altigt werden m\"ussen
+ \item strukturierte, vertrauliche Interviews
+     \begin{itemize}
+        \item Wer sind die Beteiligten?
+        \item Welche Tools werden benutzt?
+        \item Welche Probleme m\"ussen bew\"altigt werden?
+     \end{itemize}
  \item Auswahl der Teilnehmer basierend auf ihrer Zeit im Projekt und ihrem T\"atigkeitsbereich
 \end{itemize}
 \begin{figure}[h!]
@@ -172,7 +178,7 @@ Karlsruhe Institute of Technology
       node[concept] {Nutz\-er\-ein\-be\-zieh\-ung und Support}
     }
     child[concept color=green!80, grow=240] {
-      node[concept] {Con\-tri\-bu\-tor\-ein\-be\-zieh\-ung}
+      node[concept] {Ein\-be\-zieh\-ung der Con\-tri\-bu\-tor}
     }  
     child[concept color=green!80, grow=300] {
       node[concept] {Promotion}
@@ -391,12 +397,22 @@ gro\ss & 4 & 7 & 9\\
 
 \begin{frame}
 \frametitle{Kommunikation und Kollaboration in einem verteilten Team}
-\begin{itemize}
- \item team dashboard
- \item release dashboard
- \item code ownership
- \item checklists
-\end{itemize}
+\begin{columns}
+ \column{.5\textwidth}
+   \begin{itemize}
+     \item team dashboard
+     \item release dashboard
+     \item code ownership
+     \item checklists
+   \end{itemize}
+ \column{.5\textwidth}
+   \begin{figure}
+     \includegraphics[scale=0.4,keepaspectratio=true]{./TeamDashboardTable.png}
+   \end{figure}
+\end{columns}
+   \begin{figure}
+     \includegraphics[scale=0.45,keepaspectratio=true]{./bugListHalo.png}
+   \end{figure}
 \end{frame}
 
 \begin{frame}
